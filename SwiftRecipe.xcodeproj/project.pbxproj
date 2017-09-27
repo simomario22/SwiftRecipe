@@ -12,6 +12,8 @@
 		9DB019F51F7B579C00C9F515 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB019F31F7B579C00C9F515 /* Main.storyboard */; };
 		9DB019F71F7B579C00C9F515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB019F61F7B579C00C9F515 /* Assets.xcassets */; };
 		9DB019FA1F7B579C00C9F515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB019F81F7B579C00C9F515 /* LaunchScreen.storyboard */; };
+		9DB01A021F7B58AE00C9F515 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB01A011F7B58AE00C9F515 /* recipes.plist */; };
+		9DB01A081F7B64D700C9F515 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB01A071F7B64D700C9F515 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9DB019F61F7B579C00C9F515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB019F91F7B579C00C9F515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DB019FB1F7B579C00C9F515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB01A011F7B58AE00C9F515 /* recipes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
+		9DB01A071F7B64D700C9F515 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				9DB019F61F7B579C00C9F515 /* Assets.xcassets */,
 				9DB019F81F7B579C00C9F515 /* LaunchScreen.storyboard */,
 				9DB019FB1F7B579C00C9F515 /* Info.plist */,
+				9DB01A011F7B58AE00C9F515 /* recipes.plist */,
+				9DB01A071F7B64D700C9F515 /* NextViewController.swift */,
 			);
 			path = SwiftRecipe;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			files = (
 				9DB019FA1F7B579C00C9F515 /* LaunchScreen.storyboard in Resources */,
 				9DB019F71F7B579C00C9F515 /* Assets.xcassets in Resources */,
+				9DB01A021F7B58AE00C9F515 /* recipes.plist in Resources */,
 				9DB019F51F7B579C00C9F515 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB019F21F7B579C00C9F515 /* ViewController.swift in Sources */,
+				9DB01A081F7B64D700C9F515 /* NextViewController.swift in Sources */,
 				9DB019F01F7B579C00C9F515 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
