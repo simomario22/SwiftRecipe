@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uPm-IM-bAT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gHA-C7-A7F">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="dcx-YX-liI" style="IBUITableViewCellStyleDefault" id="09N-pE-fE1">
@@ -38,7 +38,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="97D-4m-HoA" kind="show" id="LoD-qM-pQe"/>
+                                            <segue destination="97D-4m-HoA" kind="show" id="YHt-wI-NEm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -57,21 +57,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rVn-cQ-Wc4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-380" y="15"/>
+            <point key="canvasLocation" x="-40.799999999999997" y="14.842578710644679"/>
         </scene>
-        <!--Next View Controller-->
+        <!--View Controller-->
         <scene sceneID="ky5-ql-BQk">
             <objects>
-                <viewController id="97D-4m-HoA" customClass="NextViewController" customModule="SwiftRecipe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="97D-4m-HoA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ul6-ah-Qkq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ju9-bX-zdD">
-                                <rect key="frame" x="0.0" y="20" width="375" height="20"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="QLp-T7-gyT"/>
                                 </constraints>
@@ -80,13 +81,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-AF-azr">
-                                <rect key="frame" x="0.0" y="48" width="375" height="225"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="t57-i0-kTu"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ytL-ec-rhh">
-                                <rect key="frame" x="0.0" y="281" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="325" width="375" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="JlR-rx-9qg"/>
@@ -95,7 +96,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5gh-Ap-WMC">
-                                <rect key="frame" x="0.0" y="439" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="483" width="375" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="cuC-QZ-NMu"/>
@@ -129,7 +130,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQq-kI-tQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="14.842578710644679"/>
+            <point key="canvasLocation" x="911.20000000000005" y="14.842578710644679"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B6u-05-zWY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uPm-IM-bAT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AKG-t7-bcJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5gJ-7c-NOS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ozy-9v-qf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-874" y="15"/>
         </scene>
     </scenes>
 </document>
