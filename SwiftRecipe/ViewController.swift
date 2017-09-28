@@ -43,11 +43,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
- //   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   //     let vc = segue.destination as! NextViewController
-   //     vc.info = selectedObject
-  //  }
+ 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! NextViewController
+        vc.info = selectedObject
+    }
 
 }
 

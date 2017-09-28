@@ -38,7 +38,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="97D-4m-HoA" kind="show" id="YHt-wI-NEm"/>
+                                            <segue destination="97D-4m-HoA" kind="show" identifier="show" id="xNV-Ga-fkU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="-40.799999999999997" y="14.842578710644679"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="ky5-ql-BQk">
             <objects>
-                <viewController id="97D-4m-HoA" sceneMemberID="viewController">
+                <viewController id="97D-4m-HoA" customClass="NextViewController" customModule="SwiftRecipe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ul6-ah-Qkq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,32 +80,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-AF-azr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-AF-azr">
                                 <rect key="frame" x="0.0" y="92" width="375" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="t57-i0-kTu"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ytL-ec-rhh">
-                                <rect key="frame" x="0.0" y="325" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="325" width="375" height="92"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="JlR-rx-9qg"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5gh-Ap-WMC">
-                                <rect key="frame" x="0.0" y="483" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="417" width="375" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="cuC-QZ-NMu"/>
+                                    <constraint firstAttribute="height" constant="250" id="M4m-O5-qtp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5gh-Ap-WMC" secondAttribute="bottom" id="B9H-0Q-gS2"/>
                             <constraint firstItem="ytL-ec-rhh" firstAttribute="leading" secondItem="rpT-Dn-WIJ" secondAttribute="leading" id="DjQ-az-0Lq"/>
                             <constraint firstItem="rpT-Dn-WIJ" firstAttribute="trailing" secondItem="5gh-Ap-WMC" secondAttribute="trailing" id="Dvt-Ux-dXD"/>
                             <constraint firstItem="SFQ-AF-azr" firstAttribute="top" secondItem="ju9-bX-zdD" secondAttribute="bottom" constant="8" id="M0Y-x3-Yt6"/>
@@ -117,15 +117,15 @@
                             <constraint firstItem="ju9-bX-zdD" firstAttribute="leading" secondItem="rpT-Dn-WIJ" secondAttribute="leading" id="qjw-kb-twy"/>
                             <constraint firstItem="SFQ-AF-azr" firstAttribute="leading" secondItem="rpT-Dn-WIJ" secondAttribute="leading" id="t3c-3v-QWb"/>
                             <constraint firstItem="rpT-Dn-WIJ" firstAttribute="trailing" secondItem="SFQ-AF-azr" secondAttribute="trailing" id="vyd-dw-ISy"/>
-                            <constraint firstItem="5gh-Ap-WMC" firstAttribute="top" secondItem="ytL-ec-rhh" secondAttribute="bottom" constant="8" id="yas-Xj-96V"/>
+                            <constraint firstItem="5gh-Ap-WMC" firstAttribute="top" secondItem="ytL-ec-rhh" secondAttribute="bottom" id="y3x-B4-a7R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rpT-Dn-WIJ"/>
                     </view>
                     <connections>
-                        <outlet property="directionsTV" destination="5gh-Ap-WMC" id="cbG-7Z-Z33"/>
-                        <outlet property="image" destination="SFQ-AF-azr" id="tOB-u0-vgI"/>
-                        <outlet property="ingredientsTV" destination="ytL-ec-rhh" id="eoV-Xl-9Ep"/>
-                        <outlet property="titleLBL" destination="ju9-bX-zdD" id="4iZ-oc-K6t"/>
+                        <outlet property="directionsTV" destination="5gh-Ap-WMC" id="Eq8-dG-GRW"/>
+                        <outlet property="ingredientsTV" destination="ytL-ec-rhh" id="CGI-rx-8iX"/>
+                        <outlet property="nameLBL" destination="ju9-bX-zdD" id="HYz-6b-2nz"/>
+                        <outlet property="recipeImageView" destination="SFQ-AF-azr" id="AmQ-7S-q6y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQq-kI-tQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
