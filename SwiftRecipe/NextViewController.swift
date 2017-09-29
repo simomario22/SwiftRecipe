@@ -21,12 +21,10 @@ class NextViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         nameLBL.text = info?["name"] as? String
-        
-        if FileManager.default.fileExists(atPath: (info!["image"] as? String)!) {
-            let url = NSURL(string: (info!["image"] as? String)!)
-            let data = NSData(contentsOf: url! as URL)
-            recipeImageView.image = UIImage(data: data! as Data)
-        }
+    
+        let url = NSURL(string: (info!["image"] as? String)!)
+        let data = NSData(contentsOf: url! as URL)
+        recipeImageView.image = UIImage(data: data! as Data)
         
        // recipeImageView.image = UIImage(URL: value)
         ingredientsTV.text = info?["ingredients"] as? String

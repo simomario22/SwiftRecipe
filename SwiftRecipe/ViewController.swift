@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedObject = myDict?.object(at: indexPath.row) as! Dictionary<String, AnyObject>
         performSegue(withIdentifier: "show", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func viewDidLoad() {
